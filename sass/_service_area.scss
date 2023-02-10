@@ -1,0 +1,65 @@
+// service area css here
+#services_area{
+    overflow: hidden;
+    padding: 50px 0px;
+    .service_box{
+        width: 90%;
+        height: 350px;
+        padding: 30px 20px;
+        border-radius: 12px;
+        text-align: center;
+        transition: all 0.5s;
+        background-color: $pColor;
+        box-shadow: 25px 25px 0px 0px $sColor;
+        margin-bottom: 70px;
+        cursor: pointer;
+        .service_logo{
+            padding: 25px;
+            display: block;
+            font-size: 45px;
+            border-radius: 25px 0px 25px 0px;
+            padding: 20px;
+            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.11);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 80px;
+            height: 80px;
+            margin: auto;
+            margin-bottom: 20px;
+            background-color: $whColor;
+            color: $sColor;
+            transition: all 0.5s;
+        }
+        .service_title{
+            font-size: 22px;
+            margin-top: 30px;
+            color: $whColor;
+            transition: all 0.5s;
+            font-family: $sFont;
+            font-weight: 600;
+        }
+        .service_text{
+            color: $whColor;
+            transition: all 0.5s;
+            margin-top: 20px;
+        }
+        &:hover{
+            background-color: $sColor;
+            transform: scale(0.96);
+            box-shadow: 20px 20px 0px 0px $pColor;
+            .service_logo{
+                background-color: $whColor;
+                color: $pColor;
+                border-radius: 0px 25px 0px 25px;
+            }
+            .service_title{
+                color: $whColor;
+            }
+            .service_text{
+                color: $whColor;
+            }
+        }
+    }
+}

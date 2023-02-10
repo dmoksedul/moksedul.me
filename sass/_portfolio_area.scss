@@ -1,0 +1,88 @@
+// portfolio css here
+#portfolio_area{
+  overflow: hidden;
+  padding: 70px 0px;
+  #portfolio_all_box{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    padding: 20px;
+  }
+  .portfio_box{
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.13);
+    border-radius: 8px;
+    overflow: hidden;
+    width: 100%;
+    height: 400px;
+    position: relative;
+    padding: 15px;
+    .portfolio_thumbnail{
+      width: 100%;
+      overflow: auto;
+      border-radius: 6px;
+      img{
+        width: 100%;
+        transition: linear all 5s;
+        border-radius: 6px;
+      }
+    }
+    .portfolio_info{
+      background: linear-gradient(180deg, $whColor, $whColor);
+      position: absolute;
+      left: 0px;
+      bottom: 0%;
+      width: 100%;
+      height: 70px;
+      z-index: 1;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      opacity: 1;
+      color: $whColor;
+      transition: all 0.5s;
+      box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.062);
+      padding: 0px 20px;
+      .portflio_title{
+        font-size: 15px;
+        font-family: $sFont;
+        color: $textColor;
+        font-weight: 700;
+      }
+      .btn_box{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        button{
+          border: none;
+          outline: none;
+          background-color: transparent;
+          color: rgba(0, 0, 0, 0.295);
+          span{
+            font-size: 12px;
+            font-weight: 600;
+            color: $sColor;
+            padding: 0px 5px;
+          }
+          &:hover{
+            color: $pColor;
+          }
+        }
+      }
+      .view_portflio_btn{
+        font-size: 17px;
+      }
+    }
+    &:hover{
+      .portfolio_thumbnail{
+        img{
+          transform: translateY(calc(-100% + 310px));
+          transition: 3s linear;
+        }
+      }
+    }
+  }
+}

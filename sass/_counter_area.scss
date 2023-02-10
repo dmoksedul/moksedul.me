@@ -1,0 +1,23 @@
+#counter_area{
+  background-image: url(../img/counter-area-bg.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  position: relative;
+  padding: 120px;
+  .counter_box{
+    text-align: center;
+    padding: 50px 10px;
+    border-radius: 100%;
+    .counter_value{
+      color: $whColor;
+      font-size: 45px;
+      font-weight: 800;
+    }
+    .counter_title{
+      font-size: 20px;
+      color: $pColor;
+    }
+  }
+}

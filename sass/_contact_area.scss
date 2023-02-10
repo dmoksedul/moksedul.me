@@ -1,0 +1,49 @@
+// contact me area css here
+#contact_me_area{
+  overflow: hidden;
+  padding: 70px 0px;
+  .contact_info_img{
+    img{
+      border-radius: 20px;
+    }
+  }
+  .contact_form{
+    h4{
+      color: $pColor;
+      text-align: center;
+      font-weight: 500;
+    }
+    padding: 50px 20px;
+    border-radius: 10px;
+    transition: all 0.5s;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.13);
+    label{
+      display: block;
+      margin-top: 20px;
+      padding: 5px;
+      font-weight: 600;
+      font-family: $sFont;
+      color: $textColor;
+    }
+    input, textarea{
+      display: block;
+      padding: 10px;
+      width: 100%;
+      border-radius: 3px;
+      border: none;
+      box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.363);
+      outline: none;
+    }
+    textarea{
+      min-height: 130px;
+    }
+    button{
+      border: none;
+      outline: none;
+      padding: 10px 20px;
+      margin: auto;
+      display: block;
+      margin-top: 30px !important;
+    }
+  }
+}

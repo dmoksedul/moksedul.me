@@ -1,0 +1,82 @@
+// hero area css here
+#hero_area{
+  min-height: 520px;
+  height: auto;
+  overflow: hidden;
+  .hero_info_area{
+    padding: 0px 0px 0px 0px;
+    h5{
+      font-size: 17px;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-family: $sFont;
+      color: $textColor;
+    }
+    span{
+      color: $pColor;
+      font-family: $sFont;
+      font-weight: 800;
+    }
+    h2{
+      font-size: 3em;
+      font-weight: 700;
+      color: $textColor;
+    }
+    h3{
+      font-size: 2.5em;
+      font-weight: 700;
+      color: $pColor;
+    }
+    p{
+      padding: 20px 0px;
+      font-size: 17px;
+      color: $textColor;
+    }
+    .fancy_text{
+      position: relative;
+      overflow: hidden;
+      display: inline-block;
+      padding-right: 10%;
+      font-family: 'Rowdies', cursive;
+      &::after{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0%;
+        background-color: $bgColor;
+        right: 0px;
+        border-left: 3px solid $pColor;
+        animation: 1.5s steps(20) fancy_text_animate alternate infinite;
+      }
+      @keyframes fancy_text_animate {
+        to{
+          width: 0%;
+        }
+      }
+    }
+  }
+  .hero_img_area{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+    img{
+      width: 90%;
+      top: 0px;
+      border-radius: 50px;
+      animation: 1.5s hero_img_animate infinite alternate linear;
+    }
+    @keyframes hero_img_animate {
+      0%{
+      }
+      100%{
+        transform: translateY(15px);
+      }
+    }
+  }
+}

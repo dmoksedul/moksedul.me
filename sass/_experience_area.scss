@@ -1,0 +1,145 @@
+// experience area here
+#experience_area{
+  padding: 100px 0px;
+  overflow: hidden;
+  img{
+    border-radius: 20px;
+  }
+  #heading_text{
+    text-align: left !important;
+    padding: 20px;
+  }
+  .works_skill_box{
+    ul{
+      li{
+        list-style: none;
+        z-index: -1;
+        font-weight: 700;
+        margin-bottom: 20px;
+        .skill_counter_box{
+          position: relative;
+          width: 100%;
+          background-color: rgba(0, 0, 0, 0.233);
+          display: block;
+          height: 10px;
+          margin-top: 5px;
+          border-radius: 25px;
+          .counter_value{
+            background-color: $pColor;
+            position: absolute;
+            left: 0%;
+            top: 0%;
+            width: 0%;
+            height: 100%;
+            border-radius: 25px;
+            animation: 1.5s experience_counter_animate forwards;
+            &::after{
+              content:"";
+              position: absolute;
+              right: 0px;
+              top: -5px;
+              width: 20px;
+              height: 20px;
+              border-radius: 100%;
+              background-color:$pColor;
+              border: 5px solid #fff;
+              box-shadow: 0 0 0px 02px $pColor;
+            }
+            span{
+              content:"80%";
+              position: absolute;
+              right: 5px;
+              top: -30px;
+              width: 20px;
+              height: 20px;
+            }
+          }
+        }
+        // counter box start
+        &:nth-child(1){
+          .skill_counter_box{
+            .counter_value{
+            animation: 1.5s experience_counter_animate1 forwards;
+            }
+            @keyframes experience_counter_animate1 {
+              to{
+                width: 90%;
+              }
+            }
+          }
+        }
+        // counter box end
+        // counter box start
+        &:nth-child(2){
+          .skill_counter_box{
+            .counter_value{
+            animation: 1.5s experience_counter_animate2 forwards;
+            }
+            @keyframes experience_counter_animate2 {
+              to{
+                width: 95%;
+              }
+            }
+          }
+        }
+        // counter box end
+        // counter box start
+        &:nth-child(3){
+          .skill_counter_box{
+            .counter_value{
+            animation: 1.5s experience_counter_animate3 forwards;
+            }
+            @keyframes experience_counter_animate3 {
+              to{
+                width: 92%;
+              }
+            }
+          }
+        }
+        // counter box end
+        // counter box start
+        &:nth-child(4){
+          .skill_counter_box{
+            .counter_value{
+            animation: 1.5s experience_counter_animate4 forwards;
+            }
+            @keyframes experience_counter_animate4 {
+              to{
+                width: 88%;
+              }
+            }
+          }
+        }
+        // counter box end
+        // counter box start
+        &:nth-child(5){
+          .skill_counter_box{
+            .counter_value{
+            animation: 1.5s experience_counter_animate5 forwards;
+            }
+            @keyframes experience_counter_animate5 {
+              to{
+                width: 75%;
+              }
+            }
+          }
+        }
+        // counter box end
+        // counter box start
+        &:nth-child(6){
+          .skill_counter_box{
+            .counter_value{
+            animation: 1.5s experience_counter_animate6 forwards;
+            }
+            @keyframes experience_counter_animate6 {
+              to{
+                width: 95%;
+              }
+            }
+          }
+        }
+        // counter box end
+      }  
+    }
+  }
+}

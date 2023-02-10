@@ -1,0 +1,169 @@
+// header area css here
+
+#header_area{
+  #hader_nav_area{
+    box-shadow: 0 0 5px 0 rgba(20, 20, 20, 0.178);
+    background-color: $bgColor;
+    z-index: 999;
+    transition: all 1s;
+    .navbar-collapse {
+      flex-grow: 0 !important;
+    }
+    .header_menu_remove{
+      display: none;
+    }
+    .dark_toggler_header{
+      display: none;
+    }
+    .fa-sun{
+      color: $whColor;
+      transition: all 0.5s;      
+      &:hover{
+        color: $pColor;
+      }
+    }
+    .fa-moon{
+      color: $textColor;
+      transition: all 0.5s;
+      &:hover{
+        color: $pColor;
+      }
+    }
+    #header_nav_menu{
+      display: block;
+      .mobile_logo{
+        display: none;
+      }
+      ul{
+        li{
+          margin-left: 20px;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          margin-right: 20px;
+          .my_btn{
+            padding: 3px 10px !important;
+          }
+          a{
+            font-size: 17px;
+            position: relative;
+            color: $textColor;
+            font-weight: 600;
+            padding: 0px;
+          &::after{
+            content: "";
+            position: absolute;
+            width: 0%;
+            height: 2px;
+            background-color: $pColor;
+            left: 0%;
+            bottom: 0px;
+            transition: all 0.5s;
+          }
+        }
+          a:hover{
+            color: $pColor;
+            &::after{
+              width: 100%;
+            }
+            }
+          .active{
+            color: $pColor !important;
+            &::after{
+              content: "";
+              position: absolute;
+              width: 100%;
+              height: 2px;
+              background-color: $pColor;
+              left: 0%;
+              bottom: 0px;
+              transition: all 0.5s;
+            }
+          }
+          // #menu_hire_me_btn{
+          //   background-color: $pColor;
+          //   color: #fff !important;
+          //   border-radius: 25px;
+          //   padding: 7px 30px;
+          //   transition: all 0.5s;
+          //   &::after{
+          //     display: none !important;
+          //   }
+          //   &:hover{
+          //     background-color: $bgColor;
+          //     color: $pColor !important;
+          //     box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.233);
+          //   }
+          // }
+          
+          .darkToggler{
+            cursor: pointer;
+            font-size: 20px;
+            width: 20px;
+            &::after{
+              display: none;
+            }
+          }
+        }
+      }
+    }
+    #mobile_menu_social{
+      display: none;
+      padding: 70px 0px 0px 0px;
+      width: 100%;
+      h4{
+        font-size: 17px;
+        text-align: center;
+        color: $pColor;
+      }
+      ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 5%;
+        padding: 0px !important;
+        margin-top: 20px;
+        li{
+          margin: 0px;
+          border: none;
+          list-style: none;
+          box-shadow: none;
+          outline: none;
+          padding: 0px;
+          border: none !important;
+          a{
+            font-size: 20px;
+            text-decoration: none;
+            background-color: $whColor;
+            box-shadow: 4px 3px 10px 0 rgba(0, 0, 0, 0.226);
+            border-radius: 100%;
+            display: flex;
+            width: 30px;
+            height: 30px;
+            justify-content: center;
+            align-items: center;
+            padding: 17px;
+            transition: all 0.5s;
+            &::after{
+              display: none;
+            }
+            &:hover{
+              background-color:$pColor;
+              color: $bgColor !important;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  .header_nav_menu_fixed {
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    left: 0;
+    display: none
+  }
+}

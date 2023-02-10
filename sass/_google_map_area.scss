@@ -1,0 +1,11 @@
+// google map area css here
+#google_map_area{
+  overflow: hidden;
+  .google_map_box{
+    iframe{
+      width: 100%;
+      min-height: 500px;
+      border-radius: 12px;
+    }
+  }
+}

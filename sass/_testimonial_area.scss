@@ -1,0 +1,89 @@
+// testimonial area css here
+#testimonal_area{
+  overflow: hidden;
+  .owl-theme .owl-dots .owl-dot span{
+    background-color: $whColor;
+    border: 1px solid $pColor;
+    transition: all 0.5s;
+    padding: 6px;
+  }
+  .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
+    background-color: $pColor;
+  }
+  .testimonial_carousel_box{
+    .item{
+      text-align: center;
+      padding: 20px 10px;
+      .testimonail_box{
+        box-shadow: 0 0 10px 0 rgba(5, 5, 5, 0.151);
+        border-radius: 50px 10px 50px 10px;
+        padding: 50px 20px;
+        transition: all 0.5s;
+        width: 95%;
+        box-shadow: -10px 10px 0px 0px $pColor;
+        border: 1px solid rgba(0, 0, 0, 0.116);
+        height: 410px;
+        &:hover{
+          transform: scale(1.05);
+          border-radius: 10px 50px 10px 50px;
+          background-color: $pColor;
+          box-shadow: 10px 10px 0px 0px $sColor;
+          .testimonail_user_logo{
+            border-color: $whColor;
+          }
+          .testimonial_user_title{
+            color: $whColor;
+          }
+          .testimonail_rating{
+            li{
+              color: $whColor;
+            }
+          }
+        }
+        .testimonail_user_logo{
+          max-width: 130px;
+          border-radius: 100%;
+          margin: auto;
+          border: 5px solid $pColor;
+          transition: all 0.5s;
+        }
+        .testimonial_user_title{
+          color: $pColor;
+          font-size: $sFont;
+          font-weight: 700;
+          margin-top: 20px;
+          transition: all 0.5s;
+        }
+        .testimonail_description{
+          color: $textColor;
+          transition: all 0.5s;
+        }
+        .testimonail_rating{
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          transition: all 0.5s;
+          li{
+            color: $pColor;
+            list-style: none;
+            padding: 3px 10px;
+            transition: all 0.5s;
+          }
+        }
+      }
+    }
+    .owl-theme .owl-nav {
+      margin-top: 10px;
+      position: absolute;
+      top: 48%;
+      display: none;
+    }
+    .owl-dots {
+      margin-top: 25px;
+    }
+  }
+  
+  
+}
