@@ -139,6 +139,20 @@
           }
         }
         // counter box end
+        // counter box start
+        &:nth-child(7){
+          .skill_counter_box{
+            .counter_value{
+            animation: 1.5s experience_counter_animate7 forwards;
+            }
+            @keyframes experience_counter_animate7 {
+              to{
+                width: 25%;
+              }
+            }
+          }
+        }
+        // counter box end
       }  
     }
   }
