@@ -32,6 +32,25 @@
       font-size: 17px;
       color: $textColor;
     }
+    .button_box{
+      display: flex;
+      flex-direction: row;
+      justify-content: start;
+      align-items: center;
+      gap: 20px;
+      a{
+        &:nth-child(2){
+          background-color: $sColor;
+          border: 1px solid #0000000c;
+          box-shadow: -5px 5px 0px 0px $pColor;
+          &:hover{
+          background-color: $pColor;
+          border: 1px solid #0000000c;
+          box-shadow: 5px 5px 0px 0px $sColor;
+          }
+        }
+      }
+    }
     .fancy_text{
       position: relative;
       overflow: hidden;

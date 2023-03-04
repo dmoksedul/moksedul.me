@@ -42,26 +42,31 @@
           justify-content: center;
           align-items: center;
           margin-right: 20px;
+          position: relative;
           .my_btn{
             padding: 3px 10px !important;
           }
-          a{
-            font-size: 17px;
-            position: relative;
-            color: $textColor;
-            font-weight: 600;
-            padding: 0px;
-          &::after{
-            content: "";
-            position: absolute;
-            width: 0%;
-            height: 2px;
-            background-color: $pColor;
-            left: 0%;
-            bottom: 0px;
-            transition: all 0.5s;
+            a{
+              font-size: 17px;
+              position: relative;
+              color: $textColor;
+              font-weight: 600;
+              padding: 0px;
+            &::after{
+              content: "";
+              position: absolute;
+              width: 0%;
+              height: 2px;
+              background-color: $pColor;
+              left: 0%;
+              bottom: 0px;
+              transition: all 0.5s;
+            }
+            i{
+              font-size: 15px;
+              padding: 0px 2px;
+            }
           }
-        }
           a:hover{
             color: $pColor;
             &::after{
@@ -105,6 +110,53 @@
               display: none;
             }
           }
+          .sub_menu_box{
+            position: absolute;
+            background-color: $whColor;
+            top: calc(100% + 10px);
+            left: 0px;
+            padding: 25px 0px;
+            max-width: 300px;
+            min-width: 250px;
+            box-shadow: 0 0 10px 0 #0000002c;
+            border-radius: 4px;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: start;
+            transition: all 0.5s;
+            transform-origin: top;
+            transform: scaleY(0);
+            gap: 10px;
+            li{
+              a{
+                text-decoration: none;
+                font-size: 14px;
+                display: block;
+                padding: 8px 10px;
+                transition: all 0.5s;
+                &:hover{
+                  background-color: $pColor;
+                  color: $whColor !important;
+                  &::after{
+                    display: none !important;
+                  }
+                }
+              }
+              a.active{
+                background-color: $pColor;
+                color: $whColor !important;
+                &::after{
+                  display: none;
+                }
+              }
+            }
+          }
+            &:hover{
+              .sub_menu_box{
+                transform: scale(1);
+              }
+            }
         }
       }
     }
