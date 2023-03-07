@@ -12,6 +12,15 @@
   opacity: 1;
   transition: all 0.5s;
   z-index: 999999999;
+  img{
+    width: 50px;
+    animation: 6s preloader_animation infinite linear;
+  }
+  @keyframes preloader_animation {
+    to{
+      transform: rotate(-360deg);
+    }
+  }
 }
 .preloaded{
   display: none !important;
