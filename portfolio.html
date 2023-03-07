@@ -14,13 +14,12 @@
    <link rel="stylesheet" href="css/owl.carousel.min.css">
    <link rel="stylesheet" href="css/owl.theme.default.min.css">
    <link rel="stylesheet" href="css/fontawesome-6.2.0/css/all.min.css">
-   <link rel="stylesheet" href="css/aos.css">
    <link rel="stylesheet" href="css/google-fonts-all.css">
    <link rel="stylesheet" href="css/style.min.css">
 </head>
 <!-- head area end -->
 <!-- body area start -->
-<body id="body" onload="preloader()" class="">
+<body id="body" onload="preloader()" class="dark">
 <!-- preloader area  start-->
 <div class="preloader">
    <img width="400" src="img/preloader.gif" alt="">
@@ -28,10 +27,10 @@
 <!-- preloader area end -->
 
 <!-- header area start -->
-<header id="header_area">
+<div id="header_area">
    <div class="inner_headera_area">
       <!-- heder menu area start -->
-      <nav data-aos="fade-down" id="hader_nav_area" class="navbar navbar-expand-lg">
+      <nav id="hader_nav_area" class="navbar navbar-expand-lg">
          <div class="inner_navbar container">
             <a href="index.html" class="navbar-brand">
                <img width="300" src="img/logo.webp" alt="">
@@ -48,18 +47,19 @@
                   </a>
                </div>
                <ul class="navbar-nav">
-                  <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-                  <li class="nav-item"><a href="services.html" class="nav-link">Service</a>
-                     <ul class="sub_menu_box">
-                        <li><a  target="_blank" href="#">Wordpress Cusomization</a></li>
-                        <li><a  target="_blank" href="#">PSD to Wordpress</a></li>
-                        <li><a  target="_blank" href="#">HTML Conversion</a></li>
-                        <li><a  target="_blank" href="#">Custom Design</a></li>
-                        <li><a  target="_blank" href="#">Problem Solving</a></li>
-                     </ul></li>
-                  <li class="nav-item"><a href="portfolio.html" class="nav-link active">Portfolio</a></li>
-                  <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-                  <li class="nav-item"><a class="darkToggler darktoggler_mobile"><i class="fas fa-moon darkWhite_btn"></i></a></li>
+                  <li class="nav-item"><a href="#header_area" class="nav-link active">Home</a></li>
+                  <li class="nav-item"><a href="#services_area" class="nav-link">Service</a>
+                  <!-- <ul class="sub_menu_box">
+                     <li><a  target="_blank" href="#">Wordpress Cusomization</a></li>
+                     <li><a  target="_blank" href="#">PSD to Wordpress</a></li>
+                     <li><a  target="_blank" href="#">HTML Conversion</a></li>
+                     <li><a  target="_blank" href="#">Custom Design</a></li>
+                     <li><a  target="_blank" href="#">Problem Solving</a></li>
+                  </ul> -->
+                  </li>
+                  <li class="nav-item"><a href="#portfolio_area" class="nav-link">Portfolio</a></li>
+                  <li class="nav-item"><a href="#counter_area" class="nav-link">About</a></li>
+                  <li class="nav-item dark_toggle_li"><a class="darkToggler darktoggler_mobile"><i class="fas fa-moon darkWhite_btn"></i></a></li>
                   <li class="nav-item"><a target="_blank" href="https://www.fiverr.com/dmoksedul" class="nav-link my_btn" id="menu_hire_me_btn">Hire Me</a></li>
                </ul>
                <div id="mobile_menu_social">
@@ -77,391 +77,204 @@
       </nav>
       <!-- heder menu area end -->
    </div>
-</header>
+</div>
 <!-- header area end -->
-
 <!-- portfolio area start -->
 <section id="portfolio_area">
-   <div class="inner_portfolio_area container">
-      <!-- heading text here -->
-      <div id="heading_text">
-         <h2 data-aos="fade-left">Latest Projects</h2>
-         <img data-aos="fade-right" src="img/heading-shape.webp" alt="">
-      </div>
-      <br/>
-      <!-- portfolio box herer -->
-      <!-- portfolio all show box start  -->
-      <div id="portfolio_all_box">
-         <!-- portfolio box start -->
-         <div class="portfio_box">
-            <div class="portfolio_thumbnail">
-               <img src="img/portfolio/06.jpg" alt="">
-            </div>
-            <div class="portfolio_info">
-               <h3 class="portflio_title">Website UI Design</h3>
-               <div class="btn_box">
-                  <button><i class="fas fa-heart"></i><span>2k</span></button>
-                  <a target="blank" href="https://dvmoksedul.github.io/website-ui-01/" class="view_portflio_btn"><i class="far fa-eye"></i></a>
-               </div>
-            </div>
-         </div>
-         <!-- portfolio box end -->
-         <!-- portfolio box start -->
-         <div class="portfio_box">
-            <div class="portfolio_thumbnail">
-               <img src="img/portfolio/01.png" alt="">
-            </div>
-            <div class="portfolio_info">
-               <h3 class="portflio_title">Website UI Design</h3>
-               <div class="btn_box">
-                  <button><i class="fas fa-heart"></i><span>10k</span></button>
-                  <a target="blank" href="https://dvmoksedul.github.io/website-ui-01/" class="view_portflio_btn"><i class="far fa-eye"></i></a>
-               </div>
-            </div>
-         </div>
-         <!-- portfolio box end -->
-         <!-- portfolio box start -->
-         <div class="portfio_box">
-            <div class="portfolio_thumbnail">
-               <img src="img/portfolio/03.png" alt="">
-            </div>
-            <div class="portfolio_info">
-               <h3 class="portflio_title">Website UI Design</h3>
-               <div class="btn_box">
-                  <button><i class="fas fa-heart"></i><span>5.1k</span></button>
-                  <a target="blank" href="https://dvmoksedul.github.io/website-ui-01/" class="view_portflio_btn"><i class="far fa-eye"></i></a>
-               </div>
-            </div>
-         </div>
-         <!-- portfolio box end -->
-         <!-- portfolio box start -->
-         <div class="portfio_box">
-            <div class="portfolio_thumbnail">
-               <img src="img/portfolio/04.png" alt="">
-            </div>
-            <div class="portfolio_info">
-               <h3 class="portflio_title">Website UI Design</h3>
-               <div class="btn_box">
-                  <button><i class="fas fa-heart"></i><span>8.7k</span></button>
-                  <a target="blank" href="https://dvmoksedul.github.io/website-ui-01/" class="view_portflio_btn"><i class="far fa-eye"></i></a>
-               </div>
-            </div>
-         </div>
-         <!-- portfolio box end -->
-         <!-- portfolio box start -->
-         <div class="portfio_box">
-            <div class="portfolio_thumbnail">
-               <img src="img/portfolio/05.png" alt="">
-            </div>
-            <div class="portfolio_info">
-               <h3 class="portflio_title">Website UI Design</h3>
-               <div class="btn_box">
-                  <button><i class="fas fa-heart"></i><span>2.1k</span></button>
-                  <a target="blank" href="https://dvmoksedul.github.io/website-ui-01/" class="view_portflio_btn"><i class="far fa-eye"></i></a>
-               </div>
-            </div>
-         </div>
-         <!-- portfolio box end -->
-         <!-- portfolio box start -->
-         <div class="portfio_box">
-            <div class="portfolio_thumbnail">
-               <img src="img/portfolio/07.webp" alt="">
-            </div>
-            <div class="portfolio_info">
-               <h3 class="portflio_title">Website UI Design</h3>
-               <div class="btn_box">
-                  <button><i class="fas fa-heart"></i><span>3.4k</span></button>
-                  <a target="blank" href="https://dvmoksedul.github.io/website-ui-01/" class="view_portflio_btn"><i class="far fa-eye"></i></a>
-               </div>
-            </div>
-         </div>
-         <!-- portfolio box end -->
-         <!-- portfolio box start -->
-         <div class="portfio_box">
-            <div class="portfolio_thumbnail">
-               <img src="img/portfolio/08.webp" alt="">
-            </div>
-            <div class="portfolio_info">
-               <h3 class="portflio_title">Website UI Design</h3>
-               <div class="btn_box">
-                  <button><i class="fas fa-heart"></i><span>3.4k</span></button>
-                  <a target="blank" href="https://dvmoksedul.github.io/website-ui-01/" class="view_portflio_btn"><i class="far fa-eye"></i></a>
-               </div>
-            </div>
-         </div>
-         <!-- portfolio box end -->
-         <!-- portfolio box start -->
-         <div class="portfio_box">
-            <div class="portfolio_thumbnail">
-               <img src="img/portfolio/09.webp" alt="">
-            </div>
-            <div class="portfolio_info">
-               <h3 class="portflio_title">Website UI Design</h3>
-               <div class="btn_box">
-                  <button><i class="fas fa-heart"></i><span>3.4k</span></button>
-                  <a target="blank" href="https://dvmoksedul.github.io/website-ui-01/" class="view_portflio_btn"><i class="far fa-eye"></i></a>
-               </div>
-            </div>
-         </div>
-         <!-- portfolio box end -->
-         <!-- portfolio box start -->
-         <div class="portfio_box">
-            <div class="portfolio_thumbnail">
-               <img src="img/portfolio/10.webp" alt="">
-            </div>
-            <div class="portfolio_info">
-               <h3 class="portflio_title">Website UI Design</h3>
-               <div class="btn_box">
-                  <button><i class="fas fa-heart"></i><span>3.4k</span></button>
-                  <a target="blank" href="https://dvmoksedul.github.io/website-ui-01/" class="view_portflio_btn"><i class="far fa-eye"></i></a>
-               </div>
-            </div>
-         </div>
-         <!-- portfolio box end -->
-         <!-- portfolio box start -->
-         <div class="portfio_box">
-            <div class="portfolio_thumbnail">
-               <img src="img/portfolio/11.webp" alt="">
-            </div>
-            <div class="portfolio_info">
-               <h3 class="portflio_title">Website UI Design</h3>
-               <div class="btn_box">
-                  <button><i class="fas fa-heart"></i><span>3.4k</span></button>
-                  <a target="blank" href="https://dvmoksedul.github.io/website-ui-01/" class="view_portflio_btn"><i class="far fa-eye"></i></a>
-               </div>
-            </div>
-         </div>
-         <!-- portfolio box end -->
-         <!-- portfolio box start -->
-         <div class="portfio_box">
-            <div class="portfolio_thumbnail">
-               <img src="img/portfolio/12.webp" alt="">
-            </div>
-            <div class="portfolio_info">
-               <h3 class="portflio_title">Website UI Design</h3>
-               <div class="btn_box">
-                  <button><i class="fas fa-heart"></i><span>3.4k</span></button>
-                  <a target="blank" href="https://dvmoksedul.github.io/website-ui-01/" class="view_portflio_btn"><i class="far fa-eye"></i></a>
-               </div>
-            </div>
-         </div>
-         <!-- portfolio box end -->
-         <!-- portfolio box start -->
-         <div class="portfio_box">
-            <div class="portfolio_thumbnail">
-               <img src="img/portfolio/13.webp" alt="">
-            </div>
-            <div class="portfolio_info">
-               <h3 class="portflio_title">Website UI Design</h3>
-               <div class="btn_box">
-                  <button><i class="fas fa-heart"></i><span>3.4k</span></button>
-                  <a target="blank" href="https://dvmoksedul.github.io/website-ui-01/" class="view_portflio_btn"><i class="far fa-eye"></i></a>
-               </div>
-            </div>
-         </div>
-         <!-- portfolio box end -->
-         <!-- portfolio box start -->
-         <div class="portfio_box">
-            <div class="portfolio_thumbnail">
-               <img src="img/portfolio/14.webp" alt="">
-            </div>
-            <div class="portfolio_info">
-               <h3 class="portflio_title">Website UI Design</h3>
-               <div class="btn_box">
-                  <button><i class="fas fa-heart"></i><span>3.4k</span></button>
-                  <a target="blank" href="https://dvmoksedul.github.io/website-ui-01/" class="view_portflio_btn"><i class="far fa-eye"></i></a>
-               </div>
-            </div>
-         </div>
-         <!-- portfolio box end -->
-         <!-- portfolio box start -->
-         <div class="portfio_box">
-            <div class="portfolio_thumbnail">
-               <img src="img/portfolio/15.webp" alt="">
-            </div>
-            <div class="portfolio_info">
-               <h3 class="portflio_title">Website UI Design</h3>
-               <div class="btn_box">
-                  <button><i class="fas fa-heart"></i><span>3.4k</span></button>
-                  <a target="blank" href="https://dvmoksedul.github.io/website-ui-01/" class="view_portflio_btn"><i class="far fa-eye"></i></a>
-               </div>
-            </div>
-         </div>
-         <!-- portfolio box end -->
-         <!-- portfolio box start -->
-         <div class="portfio_box">
-            <div class="portfolio_thumbnail">
-               <img src="img/portfolio/16.webp" alt="">
-            </div>
-            <div class="portfolio_info">
-               <h3 class="portflio_title">Website UI Design</h3>
-               <div class="btn_box">
-                  <button><i class="fas fa-heart"></i><span>3.4k</span></button>
-                  <a target="blank" href="https://dvmoksedul.github.io/website-ui-01/" class="view_portflio_btn"><i class="far fa-eye"></i></a>
-               </div>
-            </div>
-         </div>
-         <!-- portfolio box end -->
-         <!-- portfolio box start -->
-         <div class="portfio_box">
-            <div class="portfolio_thumbnail">
-               <img src="img/portfolio/17.webp" alt="">
-            </div>
-            <div class="portfolio_info">
-               <h3 class="portflio_title">Website UI Design</h3>
-               <div class="btn_box">
-                  <button><i class="fas fa-heart"></i><span>3.4k</span></button>
-                  <a target="blank" href="https://dvmoksedul.github.io/website-ui-01/" class="view_portflio_btn"><i class="far fa-eye"></i></a>
-               </div>
-            </div>
-         </div>
-         <!-- portfolio box end -->
-         <!-- portfolio box start -->
-         <div class="portfio_box">
-            <div class="portfolio_thumbnail">
-               <img src="img/portfolio/18.webp" alt="">
-            </div>
-            <div class="portfolio_info">
-               <h3 class="portflio_title">Website UI Design</h3>
-               <div class="btn_box">
-                  <button><i class="fas fa-heart"></i><span>3.4k</span></button>
-                  <a target="blank" href="https://dvmoksedul.github.io/website-ui-01/" class="view_portflio_btn"><i class="far fa-eye"></i></a>
-               </div>
-            </div>
-         </div>
-         <!-- portfolio box end -->
-         <!-- portfolio box start -->
-         <div class="portfio_box">
-            <div class="portfolio_thumbnail">
-               <img src="img/portfolio/19.webp" alt="">
-            </div>
-            <div class="portfolio_info">
-               <h3 class="portflio_title">Website UI Design</h3>
-               <div class="btn_box">
-                  <button><i class="fas fa-heart"></i><span>3.4k</span></button>
-                  <a target="blank" href="https://dvmoksedul.github.io/website-ui-01/" class="view_portflio_btn"><i class="far fa-eye"></i></a>
-               </div>
-            </div>
-         </div>
-         <!-- portfolio box end -->
-         <!-- portfolio box start -->
-         <div class="portfio_box">
-            <div class="portfolio_thumbnail">
-               <img src="img/portfolio/20.webp" alt="">
-            </div>
-            <div class="portfolio_info">
-               <h3 class="portflio_title">Website UI Design</h3>
-               <div class="btn_box">
-                  <button><i class="fas fa-heart"></i><span>3.4k</span></button>
-                  <a target="blank" href="https://dvmoksedul.github.io/website-ui-01/" class="view_portflio_btn"><i class="far fa-eye"></i></a>
-               </div>
-            </div>
-         </div>
-         <!-- portfolio box end -->
-         <!-- portfolio box start -->
-         <div class="portfio_box">
-            <div class="portfolio_thumbnail">
-               <img src="img/portfolio/21.webp" alt="">
-            </div>
-            <div class="portfolio_info">
-               <h3 class="portflio_title">Website UI Design</h3>
-               <div class="btn_box">
-                  <button><i class="fas fa-heart"></i><span>3.4k</span></button>
-                  <a target="blank" href="https://dvmoksedul.github.io/website-ui-01/" class="view_portflio_btn"><i class="far fa-eye"></i></a>
-               </div>
-            </div>
-         </div>
-         <!-- portfolio box end -->
-      </div>
-      <!-- portfolio all show box end -->
-      
-   </div>
-</section>
-<!-- portfolio area end -->
-
+    <div class="inner_portfolio_area container">
+       <!-- heading text here -->
+       <div id="heading_text">
+          <h2>Latest Projects</h2>
+          <img src="img/heading-shape.webp" alt="">
+       </div>
+       <br/>
+       <!-- portfolio box herer -->
+       <!-- portfolio all show box start  -->
+       <div id="portfolio_all_box">
+          <!-- portfolio box start -->
+          <div class="portfio_box">
+             <div class="portfolio_thumbnail">
+                <img src="img/portfolio/html-conversion-01.webp" alt="">
+             </div>
+             <div class="portfolio_info">
+                <h3 class="portflio_title">PSD to HTML Conversion</h3>
+                <div class="btn_box">
+                   <button><i class="fas fa-heart"></i><span>1.2k</span></button>
+                   <a target="blank" href="https://dmoksedul.github.io/html-conversion-001/" class="view_portflio_btn"><i class="far fa-eye"></i></a>
+                </div>
+             </div>
+          </div>
+          <!-- portfolio box end -->
+          <!-- portfolio box start -->
+          <div class="portfio_box">
+             <div class="portfolio_thumbnail">
+                <img src="img/portfolio/html-conversion-02.webp" alt="">
+             </div>
+             <div class="portfolio_info">
+                <h3 class="portflio_title">PSD to HTML Conversion</h3>
+                <div class="btn_box">
+                   <button><i class="fas fa-heart"></i><span>0.2k</span></button>
+                   <a target="blank" href="https://dmoksedul.github.io/html-conversion-002/" class="view_portflio_btn"><i class="far fa-eye"></i></a>
+                </div>
+             </div>
+          </div>
+          <!-- portfolio box end -->
+          <!-- portfolio box start -->
+          <div class="portfio_box">
+             <div class="portfolio_thumbnail">
+                <img src="img/portfolio/html-conversion-03.webp" alt="">
+             </div>
+             <div class="portfolio_info">
+                <h3 class="portflio_title">PSD to HTML Conversion</h3>
+                <div class="btn_box">
+                   <button><i class="fas fa-heart"></i><span>5.6k</span></button>
+                   <a target="blank" href="https://dmoksedul.github.io/html-conversion-003/" class="view_portflio_btn"><i class="far fa-eye"></i></a>
+                </div>
+             </div>
+          </div>
+          <!-- portfolio box end -->
+          <!-- portfolio box start -->
+          <div class="portfio_box">
+             <div class="portfolio_thumbnail">
+                <img src="img/portfolio/html-conversion-04.webp" alt="">
+             </div>
+             <div class="portfolio_info">
+                <h3 class="portflio_title">PSD to HTML Conversion</h3>
+                <div class="btn_box">
+                   <button><i class="fas fa-heart"></i><span>1.6k</span></button>
+                   <a target="blank" href="https://dmoksedul.github.io/html-conversion-004/" class="view_portflio_btn"><i class="far fa-eye"></i></a>
+                </div>
+             </div>
+          </div>
+          <!-- portfolio box end -->
+          <!-- portfolio box start -->
+          <div class="portfio_box">
+             <div class="portfolio_thumbnail">
+                <img src="img/portfolio/html-conversion-05.webp" alt="">
+             </div>
+             <div class="portfolio_info">
+                <h3 class="portflio_title">PSD to HTML Conversion</h3>
+                <div class="btn_box">
+                   <button><i class="fas fa-heart"></i><span>1k</span></button>
+                   <a target="blank" href="https://dmoksedul.github.io/html-conversion-005/" class="view_portflio_btn"><i class="far fa-eye"></i></a>
+                </div>
+             </div>
+          </div>
+          <!-- portfolio box end -->
+          <!-- portfolio box start -->
+          <div class="portfio_box">
+             <div class="portfolio_thumbnail">
+                <img src="img/portfolio/html-conversion-06.webp" alt="">
+             </div>
+             <div class="portfolio_info">
+                <h3 class="portflio_title">PSD to HTML Conversion</h3>
+                <div class="btn_box">
+                   <button><i class="fas fa-heart"></i><span>3.4k</span></button>
+                   <a target="blank" href="https://dmoksedul.github.io/html-conversion-006/" class="view_portflio_btn"><i class="far fa-eye"></i></a>
+                </div>
+             </div>
+          </div>
+          <!-- portfolio box end -->
+          <!-- portfolio box start -->
+          <div class="portfio_box">
+             <div class="portfolio_thumbnail">
+                <img src="img/portfolio/html-conversion-07.webp" alt="">
+             </div>
+             <div class="portfolio_info">
+                <h3 class="portflio_title">PSD to HTML Conversion</h3>
+                <div class="btn_box">
+                   <button><i class="fas fa-heart"></i><span>1.8k</span></button>
+                   <a target="blank" href="https://dmoksedul.github.io/html-conversion-007/" class="view_portflio_btn"><i class="far fa-eye"></i></a>
+                </div>
+             </div>
+          </div>
+          <!-- portfolio box end -->
+       </div>
+       <!-- portfolio all show box end -->
+       
+    </div>
+ </section>
+ <!-- portfolio area end -->
 
 
 <!-- footer area start -->
-<footer data-aos="fade-up" id="footer_area">
-   <span class="footer_shape_animate_1">
-      <img src="img/animate-shape-1.webp" alt="">
-   </span>
-   <span class="footer_shape_animate_2">
-      <img src="img/animate-shape-1.webp" alt="">
-   </span>
-   <div class="inner_footer_area container">
-      <div class="row">
-         <div class="col-md-4 mb-5">
-            <div class="footer_logo_area">
-               <a href="index.html">
-                  <img width="200px" src="img/logo.webp" alt="">
-               </a>
-               <div class="footer_contact_link">
-                  <ul>
-                     <li><a href="tel:+8801518301895"><i class="fas fa-phone"></i>+880 15183-01895</a></li>
-                     <li><a href="mailto:mrfmoksedulislam@gmail.com"><i class="fas fa-envelope"></i>@mrfmoksedulislam</a></li>
-                  </ul>
-               </div>
-               <div class="footer_social_area">
-                  <ul>
-                     <li><a target="_blank" href="https://facebook.com/dmoksedul"><span>Facebook</span><i class="fab fa-facebook-f"></i></a></li>
-                     <li><a target="_blank" href="https://twitter.com/dmoksedul"><span>Twitter</span><i class="fab fa-twitter"></i></a></li>
-                     <li><a target="_blank" href="https://linkedin.com/in/dmoksedul"><span>Linkedin</span><i class="fab fa-linkedin-in"></i></a></li>
-                     <li><a target="_blank" href="https://instagram.com/dmoksedul"><span>Instagram</span><i class="fab fa-instagram"></i></a></li>
-                     <li><a target="_blank" href="https://wa.link/r458sm"><span>Whatsapp</span><i class="fab fa-whatsapp"></i></a></li>
-                  </ul>
-               </div>
-            </div>
-         </div>
-         <div class="col-md-4 mb-5">
-            <div class="footer_service_area">
-               <h4>Services</h4>
-               <ul>
-                  <li><a target="_blank" href="#">PSD to HTML</a></li>
-                  <li><a target="_blank" href="#">PSD to WordPress</a></li>
-                  <li><a target="_blank" href="#">Wordpress  Setup</a></li>
-                  <li><a target="_blank" href="#">Wordpress  Demo Import</a></li>
-                  <li><a target="_blank" href="#">Woocomerce Website</a></li>
-                  <li><a target="_blank" href="#">Wordpress Customization </a></li>
-               </ul>
-            </div>
-         </div>
-         <div class="col-md-4 mb-5">
-            <div class="footer_page_list">
-               <h4>Quick Link</h4>
-               <ul>
-                  <li><a target="_blank" href="services.html">Service</a></li>
-                  <li><a target="_blank" href="portfolio.html">Portfolio</a></li>
-                  <li><a target="_blank" href="about.html">About Us</a></li>
-                  <li><a target="_blank" href="contact.html">Contact Us</a></li>
-                  <li><a target="_blank" href="privacy-policy.html">Privacy & Policy</a></li>
-               </ul>
-            </div>
-         </div>
-      </div>
-   </div>
-   <!-- copyright area -->
-   <div id="footer_copyright_area" class="">
-      <p>© <span class="year_date"></span> All rights reserved | Developed by <a href="index.html">Moksedul Islam</a></p>
-   </div>
-</footer>
-<!-- scroll to top button -->
-<button class="my_btn" id="scroll_top_btn">
-   <i class="fas fa-angle-up"></i>
-</button>
-
-
-
-<!-- footer area end -->
-
-   <!-- javascript list here -->
-   <script src="js/bootstrap.min.js"></script>
-   <script src="js/jquery.js"></script>
-   <script src="js/owl.carousel.min.js"></script>
-   <script src="js/aos.js"></script>
-   <script src="js/custom.js"></script>
-   <script>
-      AOS.init();
-    </script>
-</body>
-</html>
+<footer id="footer_area">
+    <span class="footer_shape_animate_1">
+       <img src="img/animate-shape-1.webp" alt="">
+    </span>
+    <span class="footer_shape_animate_2">
+       <img src="img/animate-shape-1.webp" alt="">
+    </span>
+    <div class="inner_footer_area container">
+       <div class="row">
+          <div class="col-md-4 mb-5">
+             <div class="footer_logo_area">
+                <a href="index.html">
+                   <img width="200px" src="img/logo.webp" alt="">
+                </a>
+                <div class="footer_contact_link">
+                   <ul>
+                      <li><a href="tel:+8801518301895"><i class="fas fa-phone"></i>+880 15183-01895</a></li>
+                      <li><a href="mailto:mrfmoksedulislam@gmail.com"><i class="fas fa-envelope"></i>@mrfmoksedulislam</a></li>
+                   </ul>
+                </div>
+                <div class="footer_social_area">
+                   <ul>
+                      <li><a target="_blank" href="https://facebook.com/dmoksedul"><span>Facebook</span><i class="fab fa-facebook-f"></i></a></li>
+                      <li><a target="_blank" href="https://twitter.com/dmoksedul"><span>Twitter</span><i class="fab fa-twitter"></i></a></li>
+                      <li><a target="_blank" href="https://linkedin.com/in/dmoksedul"><span>Linkedin</span><i class="fab fa-linkedin-in"></i></a></li>
+                      <li><a target="_blank" href="https://instagram.com/dmoksedul"><span>Instagram</span><i class="fab fa-instagram"></i></a></li>
+                      <li><a target="_blank" href="https://wa.link/r458sm"><span>Whatsapp</span><i class="fab fa-whatsapp"></i></a></li>
+                   </ul>
+                </div>
+             </div>
+          </div>
+          <div class="col-md-4 mb-5">
+             <div class="footer_service_area">
+                <h4>Services</h4>
+                <ul>
+                   <li><a target="_blank" href="#">PSD to HTML</a></li>
+                   <li><a target="_blank" href="#">PSD to WordPress</a></li>
+                   <li><a target="_blank" href="#">Wordpress  Setup</a></li>
+                   <li><a target="_blank" href="#">Wordpress  Demo Import</a></li>
+                   <li><a target="_blank" href="#">Woocomerce Website</a></li>
+                   <li><a target="_blank" href="#">Wordpress Customization </a></li>
+                </ul>
+             </div>
+          </div>
+          <div class="col-md-4 mb-5">
+             <div class="footer_page_list">
+                <h4>Quick Link</h4>
+                <ul>
+                   <li><a target="_blank" href="services.html">Service</a></li>
+                   <li><a target="_blank" href="portfolio.html">Portfolio</a></li>
+                   <li><a target="_blank" href="about.html">About Us</a></li>
+                   <li><a target="_blank" href="contact.html">Contact Us</a></li>
+                   <li><a target="_blank" href="privacy-policy.html">Privacy & Policy</a></li>
+                </ul>
+             </div>
+          </div>
+       </div>
+    </div>
+    <!-- copyright area -->
+    <div id="footer_copyright_area" class="">
+       <p>© <span class="year_date"></span> All rights reserved | Developed by <a href="index.html">Moksedul Islam</a></p>
+    </div>
+ </footer>
+ <!-- scroll to top button -->
+ <button class="my_btn" id="scroll_top_btn">
+    <i class="fas fa-angle-up"></i>
+ </button>
+ 
+ 
+ 
+ <!-- footer area end -->
+ 
+    <!-- javascript list here -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/custom.js"></script>
+ </body>
+ </html>
+ 

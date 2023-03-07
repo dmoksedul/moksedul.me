@@ -6,7 +6,7 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>About Us | Moksedul Islam</title>
+   <title>About | Moksedul Islam</title>
    <!-- favicon icon here -->
    <link rel="shortcut icon" href="img/favicon.webp" type="image/x-icon">
    <!-- stylesheet list here -->
@@ -14,13 +14,12 @@
    <link rel="stylesheet" href="css/owl.carousel.min.css">
    <link rel="stylesheet" href="css/owl.theme.default.min.css">
    <link rel="stylesheet" href="css/fontawesome-6.2.0/css/all.min.css">
-   <link rel="stylesheet" href="css/aos.css">
    <link rel="stylesheet" href="css/google-fonts-all.css">
    <link rel="stylesheet" href="css/style.min.css">
 </head>
 <!-- head area end -->
 <!-- body area start -->
-<body id="body" onload="preloader()" class="">
+<body id="body" onload="preloader()" class="dark">
 <!-- preloader area  start-->
 <div class="preloader">
    <img width="400" src="img/preloader.gif" alt="">
@@ -28,10 +27,10 @@
 <!-- preloader area end -->
 
 <!-- header area start -->
-<header id="header_area">
+<div id="header_area">
    <div class="inner_headera_area">
       <!-- heder menu area start -->
-      <nav data-aos="fade-down" id="hader_nav_area" class="navbar navbar-expand-lg">
+      <nav id="hader_nav_area" class="navbar navbar-expand-lg">
          <div class="inner_navbar container">
             <a href="index.html" class="navbar-brand">
                <img width="300" src="img/logo.webp" alt="">
@@ -48,19 +47,19 @@
                   </a>
                </div>
                <ul class="navbar-nav">
-                  <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-                  <li class="nav-item"><a href="services.html" class="nav-link">Service</a>
-                     <ul class="sub_menu_box">
-                        <li><a  target="_blank" href="#">Wordpress Cusomization</a></li>
-                        <li><a  target="_blank" href="#">PSD to Wordpress</a></li>
-                        <li><a  target="_blank" href="#">HTML Conversion</a></li>
-                        <li><a  target="_blank" href="#">Custom Design</a></li>
-                        <li><a  target="_blank" href="#">Problem Solving</a></li>
-                     </ul>
+                  <li class="nav-item"><a href="#header_area" class="nav-link active">Home</a></li>
+                  <li class="nav-item"><a href="#services_area" class="nav-link">Service</a>
+                  <!-- <ul class="sub_menu_box">
+                     <li><a  target="_blank" href="#">Wordpress Cusomization</a></li>
+                     <li><a  target="_blank" href="#">PSD to Wordpress</a></li>
+                     <li><a  target="_blank" href="#">HTML Conversion</a></li>
+                     <li><a  target="_blank" href="#">Custom Design</a></li>
+                     <li><a  target="_blank" href="#">Problem Solving</a></li>
+                  </ul> -->
                   </li>
-                  <li class="nav-item"><a href="portfolio.html" class="nav-link">Portfolio</a></li>
-                  <li class="nav-item"><a href="about.html" class="nav-link active">About</a></li>
-                  <li class="nav-item"><a class="darkToggler darktoggler_mobile"><i class="fas fa-moon darkWhite_btn"></i></a></li>
+                  <li class="nav-item"><a href="#portfolio_area" class="nav-link">Portfolio</a></li>
+                  <li class="nav-item"><a href="#counter_area" class="nav-link">About</a></li>
+                  <li class="nav-item dark_toggle_li"><a class="darkToggler darktoggler_mobile"><i class="fas fa-moon darkWhite_btn"></i></a></li>
                   <li class="nav-item"><a target="_blank" href="https://www.fiverr.com/dmoksedul" class="nav-link my_btn" id="menu_hire_me_btn">Hire Me</a></li>
                </ul>
                <div id="mobile_menu_social">
@@ -78,369 +77,325 @@
       </nav>
       <!-- heder menu area end -->
    </div>
-</header>
+</div>
 <!-- header area end -->
 
 <!-- experience area start -->
 <section id="experience_area">
-   <div class="inner_experience_area container">
-      <div class="row justify-content-center align-items-center">
-         <div class="col-md-6">
-            <div data-aos="fade-right" class="experience_img_area">
-               <img src="img/web coding.webp" alt="">
-            </div>
+    <div class="inner_experience_area container">
+       <div class="row justify-content-center align-items-center">
+          <div class="col-md-6">
+             <div class="experience_img_area">
+                <img src="img/web coding.webp" alt="">
+             </div>
+          </div>
+          <div class="col-md-6">
+             <div class="experience_info_area">
+                <!-- heading area -->
+                <div id="heading_text">
+                   <h2 class="">My Works Skills</h2>
+                   <img src="img/heading-shape.webp" alt="">
+                </div>
+                <!-- works skill area here -->
+                <div class="works_skill_box">
+                   <ul>
+                      <li>Wordpress
+                         <div class="skill_counter_box">
+                            <span class="counter_value"><span class="wp_count">90%</span></span>
+                         </div>
+                      </li>
+                      <li>HTML
+                         <div class="skill_counter_box">
+                            <span class="counter_value"><span class="html_count">95%</span></span>
+                         </div>
+                      </li>
+                      <li>CSS
+                         <div class="skill_counter_box">
+                            <span class="counter_value"><span class="css_count">92%</span></span>
+                         </div>
+                      </li>
+                      <li>BOOTSTRAP
+                         <div class="skill_counter_box">
+                            <span class="counter_value"><span class="bs_count">88%</span></span>
+                         </div>
+                      </li>
+                      <li>JAVASCRIPT
+                         <div class="skill_counter_box">
+                            <span class="counter_value"><span class="js_count">75%</span></span>
+                         </div>
+                      </li>
+                      <li>JQUERY
+                         <div class="skill_counter_box">
+                            <span class="counter_value"><span class="jquery_count">95%</span></span>
+                         </div>
+                      </li>
+                      <li>React JS
+                         <div class="skill_counter_box">
+                            <span class="counter_value"><span class="react_count">25%</span></span>
+                         </div>
+                      </li>
+                   </ul>
+                </div>
+             </div>
+          </div>
+       </div>
+    </div>
+ </section>
+ <!-- experience area end -->
+ <!-- testimonial area start -->
+ <section id="testimonal_area">
+    <div class="inner_testimonal_area container">
+       <!-- heading area -->
+       <div id="heading_text">
+          <h2 class="">Clients Review</h2>
+          <img src="img/heading-shape.webp" alt="">
+       </div>
+       <div class="testimonial_carousel_box">
+          <div class="owl-carousel owl-theme">
+             <!-- testimonial box start -->
+             <div class="item">
+                <div class="testimonail_box">
+                   <img class="testimonail_user_logo" src="img/testimonail/wesbaig.webp" alt="">
+                   <h4 class="testimonial_user_title">wesbaig</h4>
+                   <p class="testimonail_description">nice work on time good job will recommend to all who looking for converting psd to html figma to html etc.</p>
+                   <ul class="testimonail_rating">
+                      <li class="full_rating"><i class="fas fa-star"></i></li>
+                      <li class="full_rating"><i class="fas fa-star"></i></li>
+                      <li class="full_rating"><i class="fas fa-star"></i></li>
+                      <li class="full_rating"><i class="fas fa-star"></i></li>
+                      <li class="full_rating"><i class="fas fa-star"></i></li>
+                   </ul>
+                </div>
+             </div>
+             <!-- testimonial box end -->
+             <!-- testimonial box start -->
+             <div class="item">
+                <div class="testimonail_box">
+                   <img class="testimonail_user_logo" src="img/testimonail/unknown.webp" alt="">
+                   <h4 class="testimonial_user_title">
+                      joepenora</h4>
+                   <p class="testimonail_description">Great work, very easy to work with, highly recommended!</p>
+                   <ul class="testimonail_rating">
+                      <li class="full_rating"><i class="fas fa-star"></i></li>
+                      <li class="full_rating"><i class="fas fa-star"></i></li>
+                      <li class="full_rating"><i class="fas fa-star"></i></li>
+                      <li class="full_rating"><i class="fas fa-star"></i></li>
+                      <li class="full_rating"><i class="fas fa-star-half-stroke"></i></li>
+                   </ul>
+                </div>
+             </div>
+             <!-- testimonial box end -->
+             <!-- testimonial box start -->
+             <div class="item">
+                <div class="testimonail_box">
+                   <img class="testimonail_user_logo" src="img/testimonail/unknown.webp" alt="">
+                   <h4 class="testimonial_user_title">apnmedia</h4>
+                   <p class="testimonail_description">Quick response. Fast turn around time. Delivered as promised</p>
+                   <ul class="testimonail_rating">
+                      <li class="full_rating"><i class="fas fa-star"></i></li>
+                      <li class="full_rating"><i class="fas fa-star"></i></li>
+                      <li class="full_rating"><i class="fas fa-star"></i></li>
+                      <li class="full_rating"><i class="fas fa-star"></i></li>
+                      <li class="full_rating"><i class="fas fa-star"></i></li>
+                   </ul>
+                </div>
+             </div>
+             <!-- testimonial box end -->
+             <!-- testimonial box start -->
+             <div class="item">
+                <div class="testimonail_box">
+                   <img class="testimonail_user_logo" src="img/testimonail/zindexsolutions.webp" alt="">
+                   <h4 class="testimonial_user_title">zindexsolutions</h4>
+                   <p class="testimonail_description">This seller is amazing! The service is top quality, super fast, good communication, the code is clean and the responsiveness is perfect.</p>
+                   <ul class="testimonail_rating">
+                      <li class="full_rating"><i class="fas fa-star"></i></li>
+                      <li class="full_rating"><i class="fas fa-star"></i></li>
+                      <li class="full_rating"><i class="fas fa-star"></i></li>
+                      <li class="full_rating"><i class="fas fa-star"></i></li>
+                      <li class="full_rating"><i class="fas fa-star"></i></li>
+                   </ul>
+                </div>
+             </div>
+             <!-- testimonial box end -->
+             <!-- testimonial box start -->
+             <div class="item">
+                <div class="testimonail_box">
+                   <img class="testimonail_user_logo" src="img/testimonail/rapharapha.webp" alt="">
+                   <h4 class="testimonial_user_title">rapharapha</h4>
+                   <p class="testimonail_description">easy to work with. great design skills. changes as requested on time. Nirav knows what hes doing and does it very well.</p>
+                   <ul class="testimonail_rating">
+                      <li class="full_rating"><i class="fas fa-star"></i></li>
+                      <li class="full_rating"><i class="fas fa-star"></i></li>
+                      <li class="full_rating"><i class="fas fa-star"></i></li>
+                      <li class="full_rating"><i class="fas fa-star"></i></li>
+                      <li class="full_rating"><i class="fas fa-star"></i></li>
+                   </ul>
+                </div>
+             </div>
+             <!-- testimonial box end -->
+             <!-- testimonial box start -->
+             <div class="item">
+                <div class="testimonail_box">
+                   <img class="testimonail_user_logo" src="img/testimonail/dmakris.webp" alt="">
+                   <h4 class="testimonial_user_title">dmakris</h4>
+                   <p class="testimonail_description">Excellent work with! Thank you for the exceptional result!</p>
+                   <ul class="testimonail_rating">
+                      <li class="full_rating"><i class="fas fa-star"></i></li>
+                      <li class="full_rating"><i class="fas fa-star"></i></li>
+                      <li class="full_rating"><i class="fas fa-star"></i></li>
+                      <li class="full_rating"><i class="fas fa-star"></i></li>
+                      <li class="full_rating"><i class="fas fa-star"></i></li>
+                   </ul>
+                </div>
+             </div>
+             <!-- testimonial box end -->
+             <!-- testimonial box start -->
+             <div class="item">
+                <div class="testimonail_box">
+                   <img class="testimonail_user_logo" src="img/testimonail/hadibutt03.webp" alt="">
+                   <h4 class="testimonial_user_title">hadibutt03</h4>
+                   <p class="testimonail_description">It excellent experience. He was fast to respond and open to communication to ensure that I was happy with my project.</p>
+                   <ul class="testimonail_rating">
+                      <li class="full_rating"><i class="fas fa-star"></i></li>
+                      <li class="full_rating"><i class="fas fa-star"></i></li>
+                      <li class="full_rating"><i class="fas fa-star"></i></li>
+                      <li class="full_rating"><i class="fas fa-star"></i></li>
+                      <li class="full_rating"><i class="fas fa-star"></i></li>
+                   </ul>
+                </div>
+             </div>
+             <!-- testimonial box end -->
          </div>
-         <div class="col-md-6">
-            <div class="experience_info_area">
-               <!-- heading area -->
-               <div id="heading_text">
-                  <h2 class="" data-aos="fade-left">My Works Skills</h2>
-                  <img data-aos="fade-right" src="img/heading-shape.webp" alt="">
-               </div>
-               <!-- works skill area here -->
-               <div class="works_skill_box">
-                  <ul data-aos="fade-up">
-                     <li>Wordpress
-                        <div class="skill_counter_box">
-                           <span class="counter_value"></span>
-                        </div>
-                     </li>
-                     <li>HTML
-                        <div class="skill_counter_box">
-                           <span class="counter_value"></span>
-                        </div>
-                     </li>
-                     <li>CSS
-                        <div class="skill_counter_box">
-                           <span class="counter_value"></span>
-                        </div>
-                     </li>
-                     <li>BOOTSTRAP
-                        <div class="skill_counter_box">
-                           <span class="counter_value"></span>
-                        </div>
-                     </li>
-                     <li>JAVASCRIPT
-                        <div class="skill_counter_box">
-                           <span class="counter_value"></span>
-                        </div>
-                     </li>
-                     <li>JQUERY
-                        <div class="skill_counter_box">
-                           <span class="counter_value"></span>
-                        </div>
-                     </li>
-                     <li>React JS
-                        <div class="skill_counter_box">
-                           <span class="counter_value"><span class="react_count">25%</span></span>
-                        </div>
-                     </li>
-                  </ul>
-               </div>
-            </div>
-         </div>
-      </div>
-   </div>
-</section>
-<!-- experience area end -->
-<!-- counter area start -->
-<section id="counter_area">
-   <div class="inner_counter_area container">
-      <div class="row justify-content-center align-items-center g-2">
-         <!-- counter box start -->
-         <div class="col-md-3" data-aos="fade-up">
-            <div class="counter_box">
-               <h4 class="cp_counter_value counter_value">0</h4>
-               <h3 class="counter_title">Complete Projects</h3>
-            </div>
-         </div>
-         <!-- counter box end -->
-         <!-- counter box start -->
-         <div class="col-md-3" data-aos="fade-up">
-            <div class="counter_box">
-               <h4 class="wp_counter_value counter_value">0</h4>
-               <h3 class="counter_title">Wordpress</h3>
-            </div>
-         </div>
-         <!-- counter box end -->
-         <!-- counter box start -->
-         <div class="col-md-3" data-aos="fade-up">
-            <div class="counter_box">
-               <h4 class="ph_counter_value counter_value">0</h4>
-               <h3 class="counter_title">PSD to HTML</h3>
-            </div>
-         </div>
-         <!-- counter box end -->
-         <!-- counter box start -->
-         <div class="col-md-3" data-aos="fade-up">
-            <div class="counter_box">
-               <h4 class="ps_counter_value counter_value">0</h4>
-               <h3 class="counter_title">Problem Solving</h3>
-            </div>
-         </div>
-         <!-- counter box end -->
-      </div>
-   </div>
-</section>
-<!-- counter area end -->
-<!-- testimonial area start -->
-<section id="testimonal_area">
-   <div class="inner_testimonal_area container">
-      <!-- heading area -->
-      <div id="heading_text">
-         <h2 class="" data-aos="fade-left">Clients Review</h2>
-         <img data-aos="fade-right" src="img/heading-shape.webp" alt="">
-      </div>
-      <div class="testimonial_carousel_box">
-         <div data-aos="fade-up" class="owl-carousel owl-theme">
-            <!-- testimonial box start -->
-            <div class="item">
-               <div class="testimonail_box">
-                  <img class="testimonail_user_logo" src="img/testimonail/wesbaig.webp" alt="">
-                  <h4 class="testimonial_user_title">wesbaig</h4>
-                  <p class="testimonail_description">nice work on time good job will recommend to all who looking for converting psd to html figma to html etc.</p>
-                  <ul class="testimonail_rating">
-                     <li class="full_rating"><i class="fas fa-star"></i></li>
-                     <li class="full_rating"><i class="fas fa-star"></i></li>
-                     <li class="full_rating"><i class="fas fa-star"></i></li>
-                     <li class="full_rating"><i class="fas fa-star"></i></li>
-                     <li class="full_rating"><i class="fas fa-star"></i></li>
-                  </ul>
-               </div>
-            </div>
-            <!-- testimonial box end -->
-            <!-- testimonial box start -->
-            <div class="item">
-               <div class="testimonail_box">
-                  <img class="testimonail_user_logo" src="img/testimonail/unknown.webp" alt="">
-                  <h4 class="testimonial_user_title">
-                     joepenora</h4>
-                  <p class="testimonail_description">Great work, very easy to work with, highly recommended!</p>
-                  <ul class="testimonail_rating">
-                     <li class="full_rating"><i class="fas fa-star"></i></li>
-                     <li class="full_rating"><i class="fas fa-star"></i></li>
-                     <li class="full_rating"><i class="fas fa-star"></i></li>
-                     <li class="full_rating"><i class="fas fa-star"></i></li>
-                     <li class="full_rating"><i class="fas fa-star-half-stroke"></i></li>
-                  </ul>
-               </div>
-            </div>
-            <!-- testimonial box end -->
-            <!-- testimonial box start -->
-            <div class="item">
-               <div class="testimonail_box">
-                  <img class="testimonail_user_logo" src="img/testimonail/unknown.webp" alt="">
-                  <h4 class="testimonial_user_title">apnmedia</h4>
-                  <p class="testimonail_description">Quick response. Fast turn around time. Delivered as promised</p>
-                  <ul class="testimonail_rating">
-                     <li class="full_rating"><i class="fas fa-star"></i></li>
-                     <li class="full_rating"><i class="fas fa-star"></i></li>
-                     <li class="full_rating"><i class="fas fa-star"></i></li>
-                     <li class="full_rating"><i class="fas fa-star"></i></li>
-                     <li class="full_rating"><i class="fas fa-star"></i></li>
-                  </ul>
-               </div>
-            </div>
-            <!-- testimonial box end -->
-            <!-- testimonial box start -->
-            <div class="item">
-               <div class="testimonail_box">
-                  <img class="testimonail_user_logo" src="img/testimonail/zindexsolutions.webp" alt="">
-                  <h4 class="testimonial_user_title">zindexsolutions</h4>
-                  <p class="testimonail_description">This seller is amazing! The service is top quality, super fast, good communication, the code is clean and the responsiveness is perfect.</p>
-                  <ul class="testimonail_rating">
-                     <li class="full_rating"><i class="fas fa-star"></i></li>
-                     <li class="full_rating"><i class="fas fa-star"></i></li>
-                     <li class="full_rating"><i class="fas fa-star"></i></li>
-                     <li class="full_rating"><i class="fas fa-star"></i></li>
-                     <li class="full_rating"><i class="fas fa-star"></i></li>
-                  </ul>
-               </div>
-            </div>
-            <!-- testimonial box end -->
-            <!-- testimonial box start -->
-            <div class="item">
-               <div class="testimonail_box">
-                  <img class="testimonail_user_logo" src="img/testimonail/rapharapha.webp" alt="">
-                  <h4 class="testimonial_user_title">rapharapha</h4>
-                  <p class="testimonail_description">easy to work with. great design skills. changes as requested on time. Nirav knows what hes doing and does it very well.</p>
-                  <ul class="testimonail_rating">
-                     <li class="full_rating"><i class="fas fa-star"></i></li>
-                     <li class="full_rating"><i class="fas fa-star"></i></li>
-                     <li class="full_rating"><i class="fas fa-star"></i></li>
-                     <li class="full_rating"><i class="fas fa-star"></i></li>
-                     <li class="full_rating"><i class="fas fa-star"></i></li>
-                  </ul>
-               </div>
-            </div>
-            <!-- testimonial box end -->
-            <!-- testimonial box start -->
-            <div class="item">
-               <div class="testimonail_box">
-                  <img class="testimonail_user_logo" src="img/testimonail/dmakris.webp" alt="">
-                  <h4 class="testimonial_user_title">dmakris</h4>
-                  <p class="testimonail_description">Excellent work with! Thank you for the exceptional result!</p>
-                  <ul class="testimonail_rating">
-                     <li class="full_rating"><i class="fas fa-star"></i></li>
-                     <li class="full_rating"><i class="fas fa-star"></i></li>
-                     <li class="full_rating"><i class="fas fa-star"></i></li>
-                     <li class="full_rating"><i class="fas fa-star"></i></li>
-                     <li class="full_rating"><i class="fas fa-star"></i></li>
-                  </ul>
-               </div>
-            </div>
-            <!-- testimonial box end -->
-            <!-- testimonial box start -->
-            <div class="item">
-               <div class="testimonail_box">
-                  <img class="testimonail_user_logo" src="img/testimonail/hadibutt03.webp" alt="">
-                  <h4 class="testimonial_user_title">hadibutt03</h4>
-                  <p class="testimonail_description">It excellent experience. He was fast to respond and open to communication to ensure that I was happy with my project.</p>
-                  <ul class="testimonail_rating">
-                     <li class="full_rating"><i class="fas fa-star"></i></li>
-                     <li class="full_rating"><i class="fas fa-star"></i></li>
-                     <li class="full_rating"><i class="fas fa-star"></i></li>
-                     <li class="full_rating"><i class="fas fa-star"></i></li>
-                     <li class="full_rating"><i class="fas fa-star"></i></li>
-                  </ul>
-               </div>
-            </div>
-            <!-- testimonial box end -->
-        </div>
-      </div>
-   </div>
-</section>
-<!-- testimonial area end -->
-<!-- contact with me area start -->
-<section id="contact_me_area">
-   <div class="inner_contact_area container">
-      <!-- heading area -->
-      <div id="heading_text">
-         <h2 class="" data-aos="fade-left">Contact With Me</h2>
-         <img data-aos="fade-right" src="img/heading-shape.webp" alt="">
-      </div>
-      <div class="row justify-content-center align-items-center">
-         <div class="col-md-7">
-            <div data-aos="fade-right" class="contact_info_img">
-               <img src="img/contact-img.webp" alt="">
-            </div>
-         </div>
-         <div class="col-md-5">
-            <div data-aos="fade-left" class="contact_form">
-               <h4 data-aos="fade-up">Send Message</h4>
-               <form  action="https://formspree.io/f/xzbwowgp"
-               method="POST" onsubmit="return false">
-               <label for="name">Name</label>
-               <input type="text" name="name" id="form_username" required>
-               <label for="email">Email</label>
-               <input type="email" name="email" id="form_useremail" required>
-               <label for="phone">Phone</label>
-               <input type="text" name="phone" id="form_userphone" required>
-               <label for="message">Message</label>
-               <textarea type="text" name="message" id="form_usermessage" required></textarea>
-               <button class="submitBtn my_btn">Send Message</button>
-               </form>
-            </div>
-         </div>
-      </div>
-   </div>
-</section>
-<!-- contact with me area end -->
-<!-- google map area start -->
-<section id="google_map_area">
-   <div class="inner_google_map_area container">
-      <div data-aos="fade-up" class="google_map_box">
-         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57498.00018510306!2d89.22702604741235!3d25.749911571050816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e32de6fca6019b%3A0x9fa496e687f818c8!2sRangpur!5e0!3m2!1sen!2sbd!4v1673261278007!5m2!1sen!2sbd" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
-   </div>
-</section>
-<!-- google map area end -->
-
-
+       </div>
+    </div>
+ </section>
+ <!-- testimonial area end -->
+ <!-- contact with me area start -->
+ <section id="contact_me_area">
+    <div class="inner_contact_area container">
+       <!-- heading area -->
+       <div id="heading_text">
+          <h2 class="">Contact With Me</h2>
+          <img src="img/heading-shape.webp" alt="">
+       </div>
+       <div class="row justify-content-center align-items-center">
+          <div class="col-md-7">
+             <div class="contact_info_img">
+                <img src="img/contact-img.webp" alt="">
+             </div>
+          </div>
+          <div class="col-md-5">
+             <div class="contact_form">
+                <h4 >Send Message</h4>
+                <form action="https://formspree.io/f/mzbqgrdd"
+                      method="POST">
+                   <label>Name</label>
+                   <input type="text" name="name">
+                   <label>Email</label>
+                   <input type="email" name="email">
+                   <label>Phone</label>
+                   <input type="text" name="phone">
+                   <label>Message</label>
+                   <textarea name="message"></textarea>
+                   <!-- your other form fields go here -->
+                   <button class="my_btn" type="submit">Send</button>
+                </form>
+             </div>
+          </div>
+       </div>
+    </div>
+ </section>
+ <!-- contact with me area end -->
+ <!-- google map area start -->
+ <section id="google_map_area">
+    <div class="inner_google_map_area container">
+       <div class="google_map_box">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57498.00018510306!2d89.22702604741235!3d25.749911571050816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e32de6fca6019b%3A0x9fa496e687f818c8!2sRangpur!5e0!3m2!1sen!2sbd!4v1673261278007!5m2!1sen!2sbd" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+       </div>
+    </div>
+ </section>
+ <!-- google map area end -->
 
 
 
 <!-- footer area start -->
-<footer data-aos="fade-up" id="footer_area">
-   <span class="footer_shape_animate_1">
-      <img src="img/animate-shape-1.webp" alt="">
-   </span>
-   <span class="footer_shape_animate_2">
-      <img src="img/animate-shape-1.webp" alt="">
-   </span>
-   <div class="inner_footer_area container">
-      <div class="row">
-         <div class="col-md-4 mb-5">
-            <div class="footer_logo_area">
-               <a href="index.html">
-                  <img width="200px" src="img/logo.webp" alt="">
-               </a>
-               <div class="footer_contact_link">
-                  <ul>
-                     <li><a href="tel:+8801518301895"><i class="fas fa-phone"></i>+880 15183-01895</a></li>
-                     <li><a href="mailto:mrfmoksedulislam@gmail.com"><i class="fas fa-envelope"></i>@mrfmoksedulislam</a></li>
-                  </ul>
-               </div>
-               <div class="footer_social_area">
-                  <ul>
-                     <li><a target="_blank" href="https://facebook.com/dmoksedul"><span>Facebook</span><i class="fab fa-facebook-f"></i></a></li>
-                     <li><a target="_blank" href="https://twitter.com/dmoksedul"><span>Twitter</span><i class="fab fa-twitter"></i></a></li>
-                     <li><a target="_blank" href="https://linkedin.com/in/dmoksedul"><span>Linkedin</span><i class="fab fa-linkedin-in"></i></a></li>
-                     <li><a target="_blank" href="https://instagram.com/dmoksedul"><span>Instagram</span><i class="fab fa-instagram"></i></a></li>
-                     <li><a target="_blank" href="https://wa.link/r458sm"><span>Whatsapp</span><i class="fab fa-whatsapp"></i></a></li>
-                  </ul>
-               </div>
-            </div>
-         </div>
-         <div class="col-md-4 mb-5">
-            <div class="footer_service_area">
-               <h4>Services</h4>
-               <ul>
-                  <li><a target="_blank" href="#">PSD to HTML</a></li>
-                  <li><a target="_blank" href="#">PSD to WordPress</a></li>
-                  <li><a target="_blank" href="#">Wordpress  Setup</a></li>
-                  <li><a target="_blank" href="#">Wordpress  Demo Import</a></li>
-                  <li><a target="_blank" href="#">Woocomerce Website</a></li>
-                  <li><a target="_blank" href="#">Wordpress Customization </a></li>
-               </ul>
-            </div>
-         </div>
-         <div class="col-md-4 mb-5">
-            <div class="footer_page_list">
-               <h4>Quick Link</h4>
-               <ul>
-                  <li><a target="_blank" href="services.html">Service</a></li>
-                  <li><a target="_blank" href="portfolio.html">Portfolio</a></li>
-                  <li><a target="_blank" href="about.html">About Us</a></li>
-                  <li><a target="_blank" href="contact.html">Contact Us</a></li>
-                  <li><a target="_blank" href="privacy-policy.html">Privacy & Policy</a></li>
-               </ul>
-            </div>
-         </div>
-      </div>
-   </div>
-   <!-- copyright area -->
-   <div id="footer_copyright_area" class="">
-      <p>© <span class="year_date"></span> All rights reserved | Developed by <a href="index.html">Moksedul Islam</a></p>
-   </div>
-</footer>
-<!-- scroll to top button -->
-<button class="my_btn" id="scroll_top_btn">
-   <i class="fas fa-angle-up"></i>
-</button>
-
-
-
-<!-- footer area end -->
-
-   <!-- javascript list here -->
-   <script src="js/bootstrap.min.js"></script>
-   <script src="js/jquery.js"></script>
-   <script src="js/owl.carousel.min.js"></script>
-   <script src="js/aos.js"></script>
-   <script src="js/custom.js"></script>
-   <script>
-      AOS.init();
-    </script>
-</body>
-</html>
+<footer id="footer_area">
+    <span class="footer_shape_animate_1">
+       <img src="img/animate-shape-1.webp" alt="">
+    </span>
+    <span class="footer_shape_animate_2">
+       <img src="img/animate-shape-1.webp" alt="">
+    </span>
+    <div class="inner_footer_area container">
+       <div class="row">
+          <div class="col-md-4 mb-5">
+             <div class="footer_logo_area">
+                <a href="index.html">
+                   <img width="200px" src="img/logo.webp" alt="">
+                </a>
+                <div class="footer_contact_link">
+                   <ul>
+                      <li><a href="tel:+8801518301895"><i class="fas fa-phone"></i>+880 15183-01895</a></li>
+                      <li><a href="mailto:mrfmoksedulislam@gmail.com"><i class="fas fa-envelope"></i>@mrfmoksedulislam</a></li>
+                   </ul>
+                </div>
+                <div class="footer_social_area">
+                   <ul>
+                      <li><a target="_blank" href="https://facebook.com/dmoksedul"><span>Facebook</span><i class="fab fa-facebook-f"></i></a></li>
+                      <li><a target="_blank" href="https://twitter.com/dmoksedul"><span>Twitter</span><i class="fab fa-twitter"></i></a></li>
+                      <li><a target="_blank" href="https://linkedin.com/in/dmoksedul"><span>Linkedin</span><i class="fab fa-linkedin-in"></i></a></li>
+                      <li><a target="_blank" href="https://instagram.com/dmoksedul"><span>Instagram</span><i class="fab fa-instagram"></i></a></li>
+                      <li><a target="_blank" href="https://wa.link/r458sm"><span>Whatsapp</span><i class="fab fa-whatsapp"></i></a></li>
+                   </ul>
+                </div>
+             </div>
+          </div>
+          <div class="col-md-4 mb-5">
+             <div class="footer_service_area">
+                <h4>Services</h4>
+                <ul>
+                   <li><a target="_blank" href="#">PSD to HTML</a></li>
+                   <li><a target="_blank" href="#">PSD to WordPress</a></li>
+                   <li><a target="_blank" href="#">Wordpress  Setup</a></li>
+                   <li><a target="_blank" href="#">Wordpress  Demo Import</a></li>
+                   <li><a target="_blank" href="#">Woocomerce Website</a></li>
+                   <li><a target="_blank" href="#">Wordpress Customization </a></li>
+                </ul>
+             </div>
+          </div>
+          <div class="col-md-4 mb-5">
+             <div class="footer_page_list">
+                <h4>Quick Link</h4>
+                <ul>
+                   <li><a target="_blank" href="services.html">Service</a></li>
+                   <li><a target="_blank" href="portfolio.html">Portfolio</a></li>
+                   <li><a target="_blank" href="about.html">About Us</a></li>
+                   <li><a target="_blank" href="contact.html">Contact Us</a></li>
+                   <li><a target="_blank" href="privacy-policy.html">Privacy & Policy</a></li>
+                </ul>
+             </div>
+          </div>
+       </div>
+    </div>
+    <!-- copyright area -->
+    <div id="footer_copyright_area" class="">
+       <p>© <span class="year_date"></span> All rights reserved | Developed by <a href="index.html">Moksedul Islam</a></p>
+    </div>
+ </footer>
+ <!-- scroll to top button -->
+ <button class="my_btn" id="scroll_top_btn">
+    <i class="fas fa-angle-up"></i>
+ </button>
+ 
+ 
+ 
+ <!-- footer area end -->
+ 
+    <!-- javascript list here -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/custom.js"></script>
+ </body>
+ </html>
+ 
