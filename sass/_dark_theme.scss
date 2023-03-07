@@ -10,7 +10,7 @@ body.dark{
   #header_area{
     #hader_nav_area{
       background-color: $darkBgColor;
-      box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.171);
+      box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.041);
       ul{
         li{
           a{
@@ -165,6 +165,7 @@ body.dark{
     }
   }
   .portfio_box{
+    box-shadow: 0 0 3px 0 #ffffff1e !important;
     .portfolio_info{
       button{
         color: #C4CFDE;

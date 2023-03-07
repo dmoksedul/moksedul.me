@@ -16,14 +16,14 @@
       display: none;
     }
     .fa-sun{
-      color: $whColor;
+      color: $textColor;
       transition: all 0.5s;      
       &:hover{
         color: $pColor;
       }
     }
     .fa-moon{
-      color: $textColor;
+      color: $whColor;
       transition: all 0.5s;
       &:hover{
         color: $pColor;
