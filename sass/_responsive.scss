@@ -201,4 +201,29 @@
             grid-template-columns: 1fr;
         }
     }
+    .hero_info_area{
+        h3{
+            font-size: 35px !important;
+        }
+        .service_text{
+            font-size: 25px !important;
+        }
+    }
+}
+@media screen and (max-width: 500px){
+    .hero_info_area{
+        h3{
+            font-size: 27px !important;
+        }
+        .service_text{
+            font-size: 20px !important;
+        }
+    }
+}
+@media screen and (max-width: 400px){
+    .hero_info_area{
+        h3{
+            font-size: 25px !important;
+        }
+    }
 }

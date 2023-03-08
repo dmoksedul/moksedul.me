@@ -19,7 +19,7 @@
       font-weight: 800;
     }
     h2{
-      font-size: 3em;
+      font-size: 2.2em;
       font-weight: 700;
       color: $textColor;
     }
@@ -73,6 +73,15 @@
         to{
           width: 0%;
         }
+      }
+    }
+    .home_hero{
+      span{
+        color: $textColor;
+      }
+      .service_text{
+        font-size: 35px;
+        color: $textColor;
       }
     }
   }

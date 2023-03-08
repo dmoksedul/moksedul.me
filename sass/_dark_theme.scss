@@ -99,6 +99,14 @@ body.dark{
   h3{
     color: $dark_textColor !important;
   }
+  .home_hero{
+    span{
+      color: $whColor !important;
+    }
+    .service_text{
+      color: $whColor;
+    }
+  }
   .button_box{
     a{
       &:nth-child(2){

@@ -104,5 +104,24 @@ a:hover{
         max-width: 150px;
     }
 }
-
+// scrollbar design
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: linear-gradient(45deg, rgb(2, 32, 53), rgb(1, 26, 73)) 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: $pColor; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: $pColor; 
+  }
 @import "dark_theme";
