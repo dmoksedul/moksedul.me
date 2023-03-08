@@ -3,12 +3,15 @@
   overflow: hidden;
   .owl-theme .owl-dots .owl-dot span{
     background-color: $whColor;
-    border: 1px solid $pColor;
+    border: 2px solid $pColor;
     transition: all 0.5s;
-    padding: 6px;
+    padding: 5px;
   }
   .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
     background-color: $pColor;
+  }
+  .owl-theme .owl-dots{
+    display: none;
   }
   .testimonial_carousel_box{
     .item{
@@ -23,6 +26,9 @@
         box-shadow: -10px 10px 0px 0px $pColor;
         border: 1px solid rgba(0, 0, 0, 0.116);
         height: 410px;
+        .testimonial_user_title{
+          color: $whColor !important;
+        }
         &:hover{
           transform: scale(1.05);
           border-radius: 10px 50px 10px 50px;
