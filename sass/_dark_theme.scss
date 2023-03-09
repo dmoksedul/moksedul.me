@@ -2,6 +2,7 @@ $darkBgColor: #080e16;
 $dark_pColor: #1c222b;
 $darkSColor: #08101c; 
 $dark_textColor: #C4CFDE;
+$dark_btnHoverBG: #00ca87;
 body.dark{
   // dark background here
   background: url(../img/main-bg-dark.webp);
@@ -60,34 +61,76 @@ body.dark{
     }
     #hader_nav_area{
       .my_btn{
-        background-color: $darkSColor !important;
-        box-shadow: -6px 6px 0px 0px $pColor;
+        padding: 3px 10px !important;
+        border: none !important;
+        &::after{
+          top: 0px;
+          width: 0%;
+          height: 100%;
+          background-color:  $dark_btnHoverBG !important;
+        }
+        &::before{
+          top: 0px;
+          background-color:  $dark_btnHoverBG !important;
+          width: 0%;
+          height: 100%;
+        }
         &:hover{
-            background-color: $pColor !important;
-            color: $whColor !important;
-            box-shadow: 5px 5px 0px 0px $darkSColor !important;
+          &::after{
+            width: 50%;
+          }
+          &::before{
+            width: 50%;
+          }
         }
-        }
+      }
     }
     
   }
   // dark button style here
   .my_btn{
-    background-color: $dark_pColor;
-    color: $whColor !important;
-    padding: 5px 15px !important;
-    box-shadow: -5px 5px 0px 0px $pColor;
-    transition: all 0.5s;
-    font-size: 15px !important;
+    background-color: $pColor;
+    padding: 7px 15px !important;
+    transition: all 0.5s !important;
+    text-decoration: none;
+    border-radius: 2px;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+    cursor: pointer;
+    color: $whColor;
     &::after{
-        display: none;
+        display: block;
+        content: "";
+        position: absolute;
+        width: 0%;
+        height: 100%;
+        left: 0px;
+        top: 0px;
+        background-color: $dark_btnHoverBG;
+        z-index: -1;
+        transition: all 0.5s;
+    }
+    &::before{
+        content: "";
+        position: absolute;
+        width: 0%;
+        height: 100%;
+        right: 0px;
+        top: 0px;
+        background-color: $dark_btnHoverBG;
+        z-index: -1;
+        transition: all 0.5s;
     }
     &:hover{
-        background-color: $pColor;
-        color: $whColor !important;
-        box-shadow: 6px 6px 0px 0px $darkSColor;
+        &::after{
+            width: 50%;
+        }
+        &::before{
+            width: 50%;
+        }
     }
-    }
+}
 // hero area dark mode css here
 .hero_info_area{
   h5{

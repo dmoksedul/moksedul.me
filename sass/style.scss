@@ -68,21 +68,49 @@ a:hover{
 }
 .my_btn{
     background-color: $pColor;
-    color: $whColor !important;
     padding: 7px 15px !important;
-    box-shadow: -5px 5px 0px 0px $sColor;
     transition: all 0.5s !important;
-    font-size: 15px !important;
     text-decoration: none;
-    font-weight: 500;
     border-radius: 2px;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+    cursor: pointer;
+    color: $whColor;
     &::after{
-        display: none;
+        display: block;
+        content: "";
+        position: absolute;
+        width: 0%;
+        height: 100%;
+        left: 0px;
+        top: 0px;
+        background-color: $btnHoverBG;
+        z-index: -1;
+        transition: all 0.5s;
+    }
+    &::before{
+        content: "";
+        position: absolute;
+        width: 0%;
+        height: 100%;
+        right: 0px;
+        top: 0px;
+        background-color: $btnHoverBG;
+        z-index: -1;
+        transition: all 0.5s;
+    }
+    span{
+        color: $whColor !important;
+        font-weight: 500 !important;
     }
     &:hover{
-        background-color: $sColor;
-        color: $whColor !important;
-        box-shadow: 4px 4px 0px 0px $pColor;
+        &::after{
+            width: 50%;
+        }
+        &::before{
+            width: 50%;
+        }
     }
 }
 .load_more_btn{

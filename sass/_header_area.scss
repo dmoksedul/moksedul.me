@@ -45,6 +45,27 @@
           position: relative;
           .my_btn{
             padding: 3px 10px !important;
+            border: none !important;
+            &::after{
+              top: 0px;
+              width: 0%;
+              height: 100%;
+              background-color: #03326E;
+            }
+            &::before{
+              top: 0px;
+              background-color: #03326E;
+              width: 0%;
+              height: 100%;
+            }
+            &:hover{
+              &::after{
+                width: 50%;
+              }
+              &::before{
+                width: 50%;
+              }
+            }
           }
             a{
               font-size: 17px;
